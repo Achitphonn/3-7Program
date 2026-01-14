@@ -715,24 +715,24 @@ MonoBehaviour:
   ui: {fileID: 8981055265612714568}
   easy:
     name: Easy
-    startObstacleSpeed: 4
-    startSpawnRate: 1
+    startObstacleSpeed: 5
+    startSpawnRate: 0.75
     speedIncreasePerSecond: 0
     spawnRateDecreasePerSecond: 0
     minSpawnRate: 0.25
   hard:
     name: Hard
-    startObstacleSpeed: 4
-    startSpawnRate: 1
+    startObstacleSpeed: 14
+    startSpawnRate: 0.2
     speedIncreasePerSecond: 0
     spawnRateDecreasePerSecond: 0
     minSpawnRate: 0.25
   progressive:
     name: Progressive
-    startObstacleSpeed: 4
-    startSpawnRate: 1
-    speedIncreasePerSecond: 0
-    spawnRateDecreasePerSecond: 0
+    startObstacleSpeed: 7
+    startSpawnRate: 0.8
+    speedIncreasePerSecond: 0.4
+    spawnRateDecreasePerSecond: 0.05
     minSpawnRate: 0.25
   maxLives: 3
   spawnPosition: {x: 0, y: -3, z: 0}
@@ -2097,7 +2097,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Dodge Game
+  m_text: 'Space runner
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
