@@ -182,6 +182,11 @@ public class GameManager : MonoBehaviour
         {
             player.transform.position = spawnPosition;
             ability = player.GetComponent<PlayerAbility>();
+
+            // ?? HÄR: sätt rätt skin varje gång spelet startar
+            var skin = player.GetComponent<PlayerSkin>();
+            if (skin != null)
+                skin.ApplySkin();
         }
     }
 
