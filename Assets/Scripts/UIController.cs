@@ -65,7 +65,7 @@ public class UIController : MonoBehaviour
         if (bestThisModeText) bestThisModeText.text = $"Best time in {lastMode}: {bestThisMode:F2}s";
     }
 
-    // ======= HUD =======
+    
     public void UpdateHUD(float time, string mode)
     {
         if (timeText) timeText.text = $"Time: {time:F2}s";
@@ -97,13 +97,13 @@ public class UIController : MonoBehaviour
         }
     }
 
-    // ======= Button events (hook these in Inspector) =======
-    // Start Panel buttons:
+   
+   
     public void OnStartEasy() => GameManager.Instance.StartGame(DifficultyMode.Easy);
     public void OnStartHard() => GameManager.Instance.StartGame(DifficultyMode.Hard);
     public void OnStartProgressive() => GameManager.Instance.StartGame(DifficultyMode.Progressive);
 
-    // Game Over Panel buttons:
+    
     public void OnRetry() => GameManager.Instance.RetrySameMode();
     public void OnBackToStart() => GameManager.Instance.GoToStartMenu();
     public void OnGoEasy() => GameManager.Instance.ChangeDifficultyAndStart(DifficultyMode.Easy);
